@@ -1,4 +1,12 @@
 {
+  "Doc PDF/en/API docs.pdf": {
+    "blob": "c0d71d1efec08fea2807b6e968b0e23c572bcc86",
+    "source_sha": "7328f27d5723fab83fa89584887f1aa73aafe75e"
+  },
+  "Doc PDF/en/API preparation.pdf": {
+    "blob": "0351c8e84c1a7b8edeec0b2aa195a4e7b9aa1c91",
+    "source_sha": "7328f27d5723fab83fa89584887f1aa73aafe75e"
+  },
   "Doc PDF/zh-tw/API \u6587\u4ef6.pdf": {
     "blob": "bd02c4f5db1527d7f9156053d45d5738e4d7e04c",
     "source_sha": "8166aec540b4917692d4f366b3ac7aa2e17da80e"
