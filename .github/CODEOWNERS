@@ -1,0 +1,12 @@
+# 對外規格與客戶承諾：下面這些路徑的改動要具名核可。
+# 規則正本：mai-cli templates/agent-guidance.md「對外規格與客戶承諾（改動要具名核可）」。
+# 要真的擋合併，repo 規則還要開「Require review from Code Owners」；只有這個檔時只會自動請核可人審。
+# 寫法：目錄以 / 結尾；不支援大括號、[ ] 與 !；同一個檔對到多條時，以最後一條為準。
+# 要加路徑或換核可人就改這個檔，PR 說明寫核可人。
+
+# 法律與合約：正式站連到的服務條款與隱私權政策
+/terms-of-service.html  @wwwtony5488
+/privacy-policy.html    @wwwtony5488
+
+# 這個檔本身
+/.github/CODEOWNERS     @wwwtony5488
