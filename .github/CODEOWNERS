@@ -1,8 +1,8 @@
 # Changes to the paths below require review from the listed owner.
 
 # Terms of service and privacy policy
-/terms-of-service.html  @wwwtony5488
-/privacy-policy.html    @wwwtony5488
+/terms-of-service.html  @wwwtony5488 @playma
+/privacy-policy.html    @wwwtony5488 @playma
 
 # This file
-/.github/CODEOWNERS     @wwwtony5488
+/.github/CODEOWNERS     @wwwtony5488 @playma
