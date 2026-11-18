@@ -1,0 +1,555 @@
+/* Vendored from Playma-Co-Ltd/maiagent-design-system v47.5.1 (tokens/*.css), comments stripped. Do not edit by hand: re-copy from the design system tag instead. */
+/* tokens/color.css */
+:root {
+  
+  color-scheme: light;
+
+  
+
+  --c-brand-blue:  #3854D8;
+  --c-brand-green: #00DC87;
+
+  --c-blue-50:  #EEF0FC;
+  --c-blue-100: #D9DEF7;
+  --c-blue-200: #B2BDF0;
+  --c-blue-300: #8495E7;
+  --c-blue-400: #5970DE;
+  --c-blue-500: #3854D8;
+  --c-blue-600: #2641C0;
+  --c-blue-700: #1F359E;
+  --c-blue-800: #182A7B;
+  --c-blue-900: #13205E;
+
+  --c-neutral-0:   #FFFFFF;
+  --c-neutral-100: #F1F1F1;
+  --c-neutral-200: #E4E4E4;
+  --c-neutral-300: #D9D9D9;
+  --c-neutral-400: #BEBEBE;
+  --c-neutral-500: #999999;
+  --c-neutral-600: #808080;
+  --c-neutral-700: #666666;
+  --c-neutral-800: #4D4D4D;
+  --c-neutral-900: #1A1A1A;
+
+  
+  --c-ink-4:   rgb(0 0 0 / 4%);
+  --c-ink-6:   rgb(0 0 0 / 6%);
+  --c-ink-35:  rgb(0 0 0 / 35%);
+  --c-ink-45:  rgb(0 0 0 / 45%);
+  --c-ink-65:  rgb(0 0 0 / 65%);
+  --c-ink-100: #000000;
+
+  --c-ink-inverse-8:  rgb(255 255 255 / 8%);
+  --c-ink-inverse-12: rgb(255 255 255 / 12%);
+
+  --c-success-100: #E8FCF7;
+  --c-success-300: #A3F5DF;
+  --c-success-700: #228D6D;
+
+  --c-notice-100: #FEF2E6;
+  --c-notice-300: #FDDBB9;
+  --c-notice-700: #E37200;
+
+  --c-warning-100: #FEEDEC;
+  --c-warning-300: #F7BFBA;
+  --c-warning-700: #D93526;
+
+  
+
+  --color-text-primary:     var(--c-neutral-900);
+  --color-text-secondary:   var(--c-neutral-800);
+  --color-text-tertiary:    var(--c-neutral-600);
+  --color-text-placeholder: var(--c-neutral-500);
+  --color-text-disabled:    var(--c-neutral-400);
+  --color-text-on-accent:   var(--c-neutral-0);
+  --color-text-link:        var(--c-brand-blue);
+  
+  --color-text-accent:      var(--c-brand-blue);
+  
+  --color-text-selected:    var(--c-blue-600);
+  
+  --color-text-avatar:      var(--c-blue-700);
+  
+  --color-text-btn-primary: var(--color-text-accent);
+
+  --color-bg-page:     var(--c-neutral-0);
+  
+  --color-bg-canvas:   var(--c-neutral-100);
+  --color-bg-subtle:   var(--c-neutral-100);
+  --color-bg-hover:    var(--c-neutral-200);
+  --color-bg-selected: var(--c-blue-50);
+  
+  --color-bg-selected-hover: var(--c-blue-100);
+
+  
+  --color-bg-selected-glass:       color-mix(in srgb, var(--c-blue-200) 30%, transparent);
+  --color-bg-selected-glass-hover: color-mix(in srgb, var(--c-blue-200) 40%, transparent);
+  --color-bg-item-hover: var(--c-ink-4);
+  --color-bg-item-press: var(--c-ink-6);
+  
+  --color-bg-on-scrim-hover: var(--c-ink-inverse-12);
+  
+  --color-bg-glass: color-mix(in srgb, var(--color-bg-page) 30%, transparent);
+  
+  --color-bg-surface: color-mix(in srgb, var(--color-bg-page) 80%, transparent);
+  
+  --color-bg-panel: color-mix(in srgb, var(--color-bg-subtle) 60%, transparent);
+
+  
+  --color-bg-sheen: var(--c-ink-4);
+
+  --color-border-faint:  var(--c-neutral-200);
+  --color-border-subtle: var(--c-neutral-300);
+  
+  --color-border-overlay: transparent;
+
+  
+  --color-fill-control:  var(--c-neutral-400);
+  --color-scrollbar:       var(--c-neutral-300);
+  --color-scrollbar-hover: var(--c-neutral-500);
+
+  
+  --color-grip:        var(--c-neutral-300);
+  --color-grip-active: var(--c-neutral-500);
+
+  
+  
+  --color-chart-1: var(--c-brand-blue);
+  --color-chart-2: #0BBB81;
+  --color-chart-3: #824ACA;
+  --color-chart-4: #04C1D0;
+  --color-chart-5: #078661;
+  --color-chart-6: #95419A;
+  --color-chart-7: #359BD9;
+  --color-chart-8: var(--c-neutral-600);
+
+  
+  --color-zone-work:  var(--color-chart-1);
+  --color-zone-build: var(--color-chart-2);
+  --color-zone-admin: var(--color-chart-8);
+  --color-zone-work-text:  var(--color-chart-1);
+  --color-zone-build-text: color-mix(in srgb, var(--color-chart-2), var(--color-text-primary) 45%);
+  --color-zone-admin-text: color-mix(in srgb, var(--color-chart-8), var(--color-text-primary) 30%);
+
+  
+  --color-filetype-doc:     #1F4FD8;
+  --color-filetype-doc-glass:  rgb(199 215 254 / 66%);
+  --color-filetype-doc-ink:   #1B3FB5;
+  --color-filetype-pdf:     #D92D20;
+  --color-filetype-pdf-glass:  rgb(255 201 194 / 66%);
+  --color-filetype-pdf-ink:   #B42318;
+  --color-filetype-slide:   #E8590C;
+  --color-filetype-slide-glass:  rgb(255 216 189 / 66%);
+  --color-filetype-slide-ink:   #B8430A;
+  --color-filetype-sheet:   #0F8A4F;
+  --color-filetype-sheet-glass:  rgb(191 240 212 / 66%);
+  --color-filetype-sheet-ink:   #0B6E3E;
+  --color-filetype-data:    #4F46E5;
+  --color-filetype-data-glass:  rgb(212 209 251 / 66%);
+  --color-filetype-data-ink:   #3730A3;
+  --color-filetype-text:    #52617A;
+  --color-filetype-text-glass:  rgb(213 220 232 / 66%);
+  --color-filetype-text-ink:   #3A4659;
+  --color-filetype-code:    #4D7C0F;
+  --color-filetype-code-glass:  rgb(217 240 176 / 66%);
+  --color-filetype-code-ink:   #3A5F0B;
+  --color-filetype-mail:    #0284C7;
+  --color-filetype-mail-glass:  rgb(186 230 253 / 66%);
+  --color-filetype-mail-ink:   #075985;
+  --color-filetype-image:   #7C4DDB;
+  --color-filetype-image-glass:  rgb(224 212 251 / 66%);
+  --color-filetype-image-ink:   #5B34B0;
+  --color-filetype-audio:   #0E8A9B;
+  --color-filetype-audio-glass:  rgb(189 239 245 / 66%);
+  --color-filetype-audio-ink:   #0A6A78;
+  --color-filetype-video:   #C2307E;
+  --color-filetype-video-glass:  rgb(249 200 224 / 66%);
+  --color-filetype-video-ink:   #9A2463;
+  --color-filetype-cad:     #D97706;
+  --color-filetype-cad-glass:  rgb(253 227 182 / 66%);
+  --color-filetype-cad-ink:   #9A5200;
+  --color-filetype-archive: #8B5E34;
+  --color-filetype-archive-glass:  rgb(235 214 191 / 66%);
+  --color-filetype-archive-ink:   #6B431F;
+  --color-filetype-other:   #6B7280;
+  --color-filetype-other-glass:  rgb(229 231 235 / 66%);
+  --color-filetype-other-ink:   #4B5563;
+
+  
+  --color-agent-1: #5A72E6;
+  --color-agent-2: #0B8F6A;
+  --color-agent-3: #9466D8;
+  --color-agent-4: #0A8FA0;
+  --color-agent-5: #B86E00;
+  --color-agent-6: #D45A80;
+  --color-scrollbar-press: var(--c-neutral-700);
+
+  --color-action-primary:    var(--c-brand-blue);
+  --color-action-hover:      var(--c-blue-600);
+  --color-action-press:     var(--c-blue-700);
+  
+  --color-action-fill-hover: var(--c-blue-600);
+  --color-action-fill-press: var(--c-blue-700);
+  --color-action-subtle:     var(--c-blue-50);
+  
+  --color-action-focus-ring: var(--c-blue-100);
+
+  --color-brand-blue:  var(--c-brand-blue);
+  --color-brand-green: var(--c-brand-green);
+
+  --color-success-text:   var(--c-success-700);
+  --color-success-bg:     var(--c-success-100);
+  --color-success-border: var(--c-success-300);
+  --color-success-solid:  var(--c-success-700);
+
+  --color-notice-text:   var(--c-notice-700);
+  --color-notice-bg:     var(--c-notice-100);
+  --color-notice-border: var(--c-notice-300);
+  --color-notice-solid:  var(--c-notice-700);
+
+  --color-warning-text:   var(--c-warning-700);
+  --color-warning-bg:     var(--c-warning-100);
+  --color-warning-border: var(--c-warning-300);
+  --color-warning-solid:  var(--c-warning-700);
+
+  --color-info-text:   var(--c-blue-700);
+  --color-info-bg:     var(--c-blue-50);
+  --color-info-border: var(--c-blue-200);
+  --color-info-solid:  var(--c-brand-blue);
+  
+  --color-info-text-strong: var(--color-info-text);
+  --color-info-icon:        var(--color-info-solid);
+
+  
+  --color-scrim: var(--c-ink-45);
+
+  
+  --color-bg-media: var(--c-ink-100);
+
+  
+  
+  --color-shadow-selected-highlight:       rgb(255 255 255 / 70%);
+  --color-shadow-selected-highlight-hover: rgb(255 255 255 / 70%);
+  --color-shadow-selected-shade:           rgb(0 0 0 / 10%);
+  --color-shadow-selected-shade-hover:     rgb(0 0 0 / 10%);
+  --color-shadow-glass-edge:        rgb(255 255 255 / 90%);
+  --color-shadow-glass-edge-return: rgb(255 255 255 / 55%);
+  --color-shadow-glass-glow:        rgb(255 255 255 / 40%);
+  --color-shadow-glass-hairline:    rgb(0 0 0 / 8%);
+  --color-shadow-glass-drop:        rgb(0 0 0 / 28%);
+  --color-shadow-zone-edge:        rgb(255 255 255 / 90%);
+  --color-shadow-zone-emboss-hi:   rgb(255 255 255 / 95%);
+  --color-shadow-zone-emboss-lo:   transparent;
+  --color-shadow-panel:             rgb(0 0 0 / 16%);
+  --color-shadow-panel-highlight:   rgb(255 255 255 / 70%);
+  --color-shadow-panel-rim:         color-mix(in srgb, var(--color-text-primary) 6%, transparent);
+  --color-glass-sheen:              rgb(255 255 255 / 32%);
+  
+  --color-glass-rim:                rgb(255 255 255 / 95%);
+  --color-glass-rim-mid:            rgb(255 255 255 / 45%);
+  --color-glass-rim-return:         rgb(255 255 255 / 75%);
+  --color-shadow-edge: color-mix(in srgb, var(--c-neutral-900) 14%, transparent);
+}
+
+[data-brand] {
+  --color-action-primary:    var(--brand, var(--c-brand-blue));
+  
+  --color-text-accent:       var(--brand, var(--c-brand-blue));
+  
+  --color-text-avatar:       var(--brand, var(--c-brand-blue));
+  
+  --color-text-selected:     color-mix(in srgb, var(--brand, var(--c-brand-blue)) 88%, var(--c-neutral-900));
+  
+  --color-text-btn-primary:  var(--brand, var(--c-brand-blue));
+  --color-action-hover:      color-mix(in srgb, var(--brand, var(--c-brand-blue)) 88%, var(--c-neutral-900));
+  --color-action-press:      color-mix(in srgb, var(--brand, var(--c-brand-blue)) 76%, var(--c-neutral-900));
+  --color-action-fill-hover: color-mix(in srgb, var(--brand, var(--c-brand-blue)) 88%, var(--c-neutral-900));
+  --color-action-fill-press: color-mix(in srgb, var(--brand, var(--c-brand-blue)) 76%, var(--c-neutral-900));
+  --color-action-subtle:     color-mix(in srgb, var(--brand, var(--c-brand-blue)) 10%, var(--c-neutral-0));
+  --color-action-focus-ring: color-mix(in srgb, var(--brand, var(--c-brand-blue)) 30%, var(--c-neutral-0));
+  --color-text-on-accent:    var(--brand-on, var(--c-neutral-0));
+}
+
+/* tokens/spacing.css */
+:root {
+  
+  --space-1:  4px;
+  --space-2:  8px;
+  --space-4:  16px;
+  --space-8:  32px;
+  --space-16: 64px;
+
+  
+  --space-xs:  var(--space-1);
+  --space-sm:  var(--space-2);
+  --space-lg:  var(--space-4);
+  --space-xl:  var(--space-8);
+  --space-2xl: var(--space-16);
+
+  
+  --space-6: 24px;
+
+}
+
+/* tokens/radius.css */
+:root {
+  
+  --radius-1: 4px;
+  --radius-2: 8px;
+  --radius-4: 16px;
+  --radius-8: 32px;
+
+  
+  --radius-sm:   var(--radius-1);
+  --radius-md:   var(--radius-2);
+  --radius-lg:   var(--radius-4);
+  --radius-xl:   var(--radius-8);  
+  --radius-full: 9999px;           
+
+  
+  
+  --radius-surface: 24px;
+}
+
+/* tokens/effect.css */
+:root {
+  
+  
+  --shadow-sm: 0 0 8px rgba(0, 0, 0, 0.08), 0 2px 2px rgba(0, 0, 0, 0.10);
+  --shadow-md: 0 2px 4px rgba(0, 0, 0, 0.08), 0 4px 8px rgba(0, 0, 0, 0.10);
+  
+  --shadow-lg: 0 0 0 1px var(--color-border-overlay), 0 4px 8px rgba(0, 0, 0, 0.08), 0 12px 16px rgba(0, 0, 0, 0.15);
+
+  
+  
+  --shadow-halo: 0 0 20px rgba(0, 0, 0, 0.05);
+  
+  --shadow-focus-ring: 0 0 4px 2px var(--color-action-focus-ring);
+  
+  --shadow-focus-ring-inset: inset 0 0 4px 2px var(--color-action-focus-ring);
+  --shadow-focus-ring-error: 0 0 4px 2px var(--color-warning-border);
+
+  
+  
+  --shadow-selected:       inset 0 1px 0 var(--color-shadow-selected-highlight), 0 2px 3px -2px var(--color-shadow-selected-shade);
+  --shadow-selected-hover: inset 0 1px 0 var(--color-shadow-selected-highlight-hover), 0 3px 4px -3px var(--color-shadow-selected-shade-hover);
+  
+  --shadow-glass-edge: inset 1px 1px 0 var(--color-shadow-glass-edge), inset -1px -1px 0 var(--color-shadow-glass-edge-return), inset 0 0 18px var(--color-shadow-glass-glow);
+  --shadow-glass-drop: 0 0 0 0.5px var(--color-shadow-glass-hairline), 0 14px 36px -12px var(--color-shadow-glass-drop);
+  
+  --shadow-glass-glow: inset 0 0 18px var(--color-shadow-glass-glow);
+  --shadow-glass-lift: 0 14px 36px -12px var(--color-shadow-glass-drop);
+  
+  --shadow-panel: 0 0 8px var(--color-shadow-panel);
+  
+  --shadow-panel-edge: inset 0 1px 0 var(--color-shadow-panel-highlight), 0 0 0 1px var(--color-shadow-panel-rim);
+  
+  --shadow-overlay: 0 0 0 0.5px rgba(0, 0, 0, 0.10), 0 8px 18px -8px rgba(0, 0, 0, 0.25), 0 24px 56px -12px rgba(0, 0, 0, 0.45);
+
+  
+  --backdrop-glass:       blur(16px) saturate(1.9);
+  --backdrop-glass-heavy: blur(36px) saturate(1.9);
+  
+  --backdrop-scrim:       blur(4px);
+
+  
+  --gradient-glass-sheen: linear-gradient(150deg, var(--color-glass-sheen), transparent 42%);
+  
+  --gradient-glass-rim: linear-gradient(135deg, var(--color-glass-rim), var(--color-glass-rim-mid) 40% 65%, var(--color-glass-rim-return));
+
+  
+  --gradient-loader: conic-gradient(from 0deg, transparent 0 35%, color-mix(in srgb, currentColor 30%, transparent) 60%, currentColor 92%, transparent 100%);
+  --mask-loader-ring: radial-gradient(farthest-side, transparent 72%, black 76%);
+
+  
+  --tint-float-in: 20%;
+  --tint-float-in-hover: 26%;
+  --tint-float-in-press: 30%;
+  
+  --tint-avatar-edge: 48%;
+  
+  --tint-zone-from: 6%;
+  --tint-zone-to: 12%;
+  
+  --tint-zone-caret: 55%;
+  --tint-zone-emboss: 45%;
+  
+  --tint-aurora-green: 22%;
+  --tint-aurora-blue: 16%;
+  --tint-aurora-tone: 8%;
+  
+  --tint-gen-media: 10%;
+
+  --duration-fast: 0.12s;
+  --duration-md:   0.2s;
+  --duration-slow: 0.32s;
+  
+  --duration-xslow: 1s;
+
+  
+  --cycle-flow:     4s;    
+  --cycle-showcase: 10s;   
+  --cycle-sweep:    8s;    
+  --cycle-aurora:   30s;   
+  --cycle-composer-spin:    20s;  
+  --cycle-composer-breathe: 3s;   
+  --cycle-spotlight: 5s;          
+  --cycle-rec:      1.6s; 
+  --cycle-empty-art:   12s; 
+  --cycle-empty-glyph: 6s;  
+  --cycle-live-art:    4s;  
+  --cycle-wait-dots:   3.6s; 
+  --cycle-gen-media:   15s;  
+  --cycle-ghost:       3.2s; 
+  --cycle-ai-sheen:    2.8s; 
+
+  --ease-linear:   linear;
+  --ease-standard: cubic-bezier(0.4, 0, 0.2, 1);
+  --ease-smooth:   cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-spring:   cubic-bezier(0.34, 1.56, 0.64, 1); 
+}
+
+[data-theme='dark'] {
+  --shadow-lg: 0 0 0 1px var(--color-border-overlay), 0 4px 8px rgba(0, 0, 0, 0.08), 0 12px 16px rgba(0, 0, 0, 0.15);
+  --shadow-selected:       inset 0 1px 0 var(--color-shadow-selected-highlight), 0 2px 3px -2px var(--color-shadow-selected-shade);
+  --shadow-selected-hover: inset 0 1px 0 var(--color-shadow-selected-highlight-hover), 0 3px 4px -3px var(--color-shadow-selected-shade-hover);
+  --shadow-glass-edge: inset 1px 1px 0 var(--color-shadow-glass-edge), inset -1px -1px 0 var(--color-shadow-glass-edge-return), inset 0 0 18px var(--color-shadow-glass-glow);
+  --shadow-glass-drop: 0 0 0 0.5px var(--color-shadow-glass-hairline), 0 14px 36px -12px var(--color-shadow-glass-drop);
+  --shadow-glass-glow: inset 0 0 18px var(--color-shadow-glass-glow);
+  --shadow-glass-lift: 0 14px 36px -12px var(--color-shadow-glass-drop);
+  --shadow-panel: 0 0 8px var(--color-shadow-panel);
+  --shadow-panel-edge: inset 0 1px 0 var(--color-shadow-panel-highlight), 0 0 0 1px var(--color-shadow-panel-rim);
+  --gradient-glass-sheen: linear-gradient(150deg, var(--color-glass-sheen), transparent 42%);
+  --gradient-glass-rim: linear-gradient(135deg, var(--color-glass-rim), var(--color-glass-rim-mid) 40% 65%, var(--color-glass-rim-return));
+  --shadow-focus-ring: 0 0 4px 2px var(--color-action-focus-ring);
+  --shadow-focus-ring-inset: inset 0 0 4px 2px var(--color-action-focus-ring);
+  --shadow-focus-ring-error: 0 0 4px 2px var(--color-warning-border);
+  --tint-zone-from: 10%;
+  --tint-zone-to: 20%;
+  --tint-zone-caret: 45%;
+  --tint-zone-emboss: 0%;
+  --tint-aurora-green: 12%;
+  --tint-aurora-blue: 10%;
+  --tint-float-in: 34%;
+  --tint-float-in-hover: 42%;
+  --tint-float-in-press: 48%;
+}
+
+/* tokens/layout.css */
+:root {
+  
+  --breakpoint-sm: 768px;   
+  --breakpoint-md: 1024px;  
+  --breakpoint-lg: 1280px;  
+
+  
+  --container-sm: 528px;  
+  --container-md: 708px;  
+
+  
+  --size-header-height:         48px;
+  --size-footer-height:         76px;
+  --size-tab-bar-height:        32px;
+  --size-nav-item-height:       40px;
+  
+  --size-overlay-bar-height:    48px;
+  
+  --size-table-head-height:     40px;
+  
+  --size-sider-width:           280px;
+  
+  --size-sider-min-width: 208px;
+  
+  --size-sider-collapsed-width: 52px;
+  --size-sider-mobile-width:    280px;
+  --size-panel-width:           260px;
+  --size-aside-width:           220px;  
+  --size-logo:                  32px;
+  --size-file-icon-sm:          20px;
+  --size-file-icon-md:          32px;
+  --size-file-icon-lg:          48px;
+  --size-content-max-width:     768px;
+  
+  --size-chat-max-width:        1024px;
+  --size-control-height-sm:     24px;   
+  --size-control-height-md:     36px;
+  --size-control-height-lg:     44px;
+  --size-control-min-width:     200px;
+
+  
+  
+  --size-scrollbar:              12px;
+  --size-scrollbar-thumb:        4px;
+  --size-scrollbar-thumb-active: 8px;
+
+  
+  
+  --size-arrow-height: 6px;
+  --size-arrow-width:  20px;
+
+  
+  
+  --size-scroll-fade: 28px;
+
+  
+  
+  --size-bar-height: 8px;
+  --size-bar-height-sm: 4px;
+
+  
+  --z-base:     0;
+  --z-raised:   10;
+  --z-sticky:   100;
+  --z-chrome:   200;
+  --z-dropdown: 300;
+  --z-scrim:    400;
+  --z-modal:    500;
+  --z-toast:    600;
+  --z-tooltip:  700;
+  --z-blocking: 800;
+}
+
+/* tokens/icon.css */
+:root {
+  --icon-sm: 16px;
+  --icon-md: 20px;
+  --icon-lg: 24px;
+  
+  --icon-xl: 40px;
+}
+
+/* tokens/typography.css */
+:root {
+  
+  --font-noto:       "Noto Sans TC";
+  --font-native-cjk: "PingFang TC", "Microsoft JhengHei";
+  --font-sans: "Inter", var(--font-noto), -apple-system, BlinkMacSystemFont, "Segoe UI", var(--font-native-cjk), sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+
+  
+  --text-display: 36px;
+  --text-h1:      28px;
+  --text-h2:      22px;
+  --text-h3:      18px;
+  --text-h4:      16px;
+  --text-body:    14px;
+  --text-caption: 12px;
+
+  
+  --leading-display: 48px; 
+  --leading-h1:      38px; 
+  --leading-h2:      30px; 
+  --leading-h3:      28px; 
+  --leading-h4:      24px; 
+  --leading-body:    22px; 
+  --leading-caption: 18px; 
+
+  
+  --weight-regular: 400;
+  --weight-medium:  500;
+  --weight-bold:    700;
+
+  
+  --tracking-table-header: 0.03em;
+  --tracking-brand-title:  -0.01em;
+}

@@ -1,0 +1,338 @@
+/* Vendored from Playma-Co-Ltd/maiagent-design-system v47.5.1 (components/markdown/markdown.css), comments stripped. Do not edit by hand: re-copy from the design system tag instead. */
+.markdown {
+  font-family: var(--font-sans);
+  font-size: var(--text-body);
+  line-height: var(--leading-body);
+  color: var(--color-text-primary);
+}
+
+:where(.markdown h1),
+:where(.markdown h2),
+:where(.markdown h3),
+:where(.markdown h4),
+:where(.markdown h5),
+:where(.markdown h6),
+:where(.markdown p),
+:where(.markdown ul),
+:where(.markdown ol),
+:where(.markdown blockquote),
+:where(.markdown hr),
+:where(.markdown pre),
+:where(.markdown table),
+:where(.markdown details),
+:where(.markdown figure) {
+  margin: 0;
+}
+
+.markdown > * + * { margin-top: var(--space-lg); }
+
+.markdown > * + h1,
+.markdown > * + h2 { margin-top: var(--space-xl); }
+
+.markdown > * + h3,
+.markdown > * + h4 { margin-top: var(--space-6); }
+
+.markdown > * + h5,
+.markdown > * + h6 { margin-top: var(--space-lg); }
+
+.markdown > h1 + * { margin-top: var(--space-lg); }
+
+.markdown > h2 + *,
+.markdown > h3 + *,
+.markdown > h4 + * { margin-top: var(--space-sm); }
+
+.markdown > h5 + *,
+.markdown > h6 + * { margin-top: var(--space-xs); }
+
+.markdown > h1 + h1,
+.markdown > h1 + h2,
+.markdown > h1 + h3,
+.markdown > h1 + h4,
+.markdown > h1 + h5,
+.markdown > h1 + h6,
+.markdown > h2 + h1,
+.markdown > h2 + h2,
+.markdown > h2 + h3,
+.markdown > h2 + h4,
+.markdown > h2 + h5,
+.markdown > h2 + h6,
+.markdown > h3 + h1,
+.markdown > h3 + h2,
+.markdown > h3 + h3,
+.markdown > h3 + h4,
+.markdown > h3 + h5,
+.markdown > h3 + h6,
+.markdown > h4 + h1,
+.markdown > h4 + h2,
+.markdown > h4 + h3,
+.markdown > h4 + h4,
+.markdown > h4 + h5,
+.markdown > h4 + h6,
+.markdown > h5 + h1,
+.markdown > h5 + h2,
+.markdown > h5 + h3,
+.markdown > h5 + h4,
+.markdown > h5 + h5,
+.markdown > h5 + h6,
+.markdown > h6 + h1,
+.markdown > h6 + h2,
+.markdown > h6 + h3,
+.markdown > h6 + h4,
+.markdown > h6 + h5,
+.markdown > h6 + h6 { margin-top: var(--space-sm); }
+
+.markdown > * + hr,
+.markdown > hr + * { margin-top: var(--space-6); }
+
+.markdown h1 {
+  font-size: var(--text-h2);
+  line-height: var(--leading-h2);
+  font-weight: var(--weight-bold);
+}
+
+.markdown h2 {
+  font-size: var(--text-h3);
+  line-height: var(--leading-h3);
+  font-weight: var(--weight-medium);
+}
+
+.markdown h3 {
+  font-size: var(--text-h4);
+  line-height: var(--leading-h4);
+  font-weight: var(--weight-medium);
+}
+
+.markdown h4,
+.markdown h5,
+.markdown h6 {
+  font-size: var(--text-body);
+  line-height: var(--leading-body);
+  font-weight: var(--weight-medium);
+}
+
+.markdown h6 { color: var(--color-text-secondary); }
+
+.markdown h1,
+.markdown h2,
+.markdown h3,
+.markdown h4,
+.markdown h5,
+.markdown h6 { text-wrap: balance; }
+
+.markdown strong { font-weight: var(--weight-bold); }
+
+.markdown em { font-style: italic; }
+
+.markdown del { color: var(--color-text-tertiary); }
+
+.markdown mark {
+  padding: 0 var(--space-xs);
+  border-radius: var(--radius-sm);
+  background: var(--color-notice-bg);
+  color: var(--color-notice-text);
+}
+
+.markdown a {
+  color: var(--color-text-link);
+  text-decoration: underline;
+  text-decoration-color: color-mix(in srgb, currentColor 35%, transparent);
+  text-underline-offset: 2px;
+}
+
+.markdown a:hover,
+.markdown a.is-hover { text-decoration-color: currentColor; }
+
+.markdown sup a { text-decoration: none; }
+
+.markdown code {
+  padding: 0 var(--space-sm);
+  border-radius: var(--radius-md);
+  background: var(--color-bg-subtle);
+  color: var(--color-text-secondary);
+  font-family: var(--font-mono);
+  font-size: 0.875em;
+}
+
+.markdown ul,
+.markdown ol { padding-left: var(--space-6); }
+
+.markdown li + li { margin-top: var(--space-xs); }
+
+.markdown li > ul,
+.markdown li > ol { margin-top: var(--space-xs); }
+
+.markdown li::marker { color: var(--color-text-tertiary); }
+
+.markdown ol > li::marker { font-weight: var(--weight-bold); }
+
+.markdown ul:has(> li > input[type="checkbox"]) {
+  padding-left: 0;
+  list-style: none;
+}
+
+.markdown input[type="checkbox"] {
+  appearance: none;
+  -webkit-appearance: none;
+  display: inline-block;
+  vertical-align: top;
+  width: var(--icon-md);
+  height: var(--icon-md);
+  margin: calc((var(--leading-body) - var(--icon-md)) / 2) var(--space-sm) 0 0;
+  border: 1px solid var(--color-border-subtle);
+  border-radius: var(--radius-sm);
+  background: var(--color-bg-page);
+  pointer-events: none;
+}
+
+.markdown input:checked {
+  border-color: var(--color-action-primary);
+  background: var(--color-action-primary) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M20 6 9 17l-5-5'/%3E%3C/svg%3E") center / var(--icon-sm) no-repeat;
+}
+
+.markdown blockquote {
+  padding: var(--space-sm) 0 var(--space-sm) var(--space-lg);
+  border-left: 4px solid var(--color-border-subtle);
+  color: var(--color-text-secondary);
+}
+
+.markdown blockquote > * + * { margin-top: var(--space-sm); }
+
+.markdown hr {
+  border: 0;
+  border-top: 1px solid var(--color-border-faint);
+}
+
+.markdown__table {
+  overflow: auto;
+  border: 1px solid var(--color-border-faint);
+  border-radius: var(--radius-md);
+}
+
+.markdown__table table {
+  width: 100%;
+  border-collapse: collapse;
+  font-variant-numeric: tabular-nums;
+}
+
+.markdown__table th {
+  height: var(--size-table-head-height);
+  padding: var(--space-sm) var(--space-lg);
+  border-bottom: 1px solid var(--color-border-faint);
+  background: var(--color-bg-subtle);
+  color: var(--color-text-primary);
+  font-size: var(--text-body);
+  line-height: var(--leading-body);
+  font-weight: var(--weight-medium);
+  text-align: left;
+  white-space: nowrap;
+}
+
+.markdown__table td {
+  height: 48px;
+  padding: var(--space-sm) var(--space-lg);
+  border-bottom: 1px solid var(--color-border-faint);
+  color: var(--color-text-secondary);
+}
+
+.markdown__table tbody tr:last-child td { border-bottom: 0; }
+
+.markdown__table tbody tr:hover,
+.markdown__table tbody tr.is-hover { background: var(--color-bg-hover); }
+
+@media (hover: none) {
+  .markdown__table tbody tr:hover { background: none; }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .markdown__table tbody tr { transition: background var(--duration-fast) var(--ease-standard); }
+}
+
+.markdown__code {
+  overflow: hidden;
+  border: 1px solid var(--color-border-faint);
+  border-radius: var(--radius-md);
+}
+
+.markdown__code-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-sm);
+  height: var(--size-table-head-height);
+  padding: 0 var(--space-sm) 0 var(--space-lg);
+  border-bottom: 1px solid var(--color-border-faint);
+  background: var(--color-bg-subtle);
+  color: var(--color-text-primary);
+  font-size: var(--text-body);
+  line-height: var(--leading-body);
+  font-weight: var(--weight-medium);
+}
+
+.markdown__code-name { min-width: 0; }
+
+.markdown__code-actions { display: flex; flex: none; }
+
+.markdown pre {
+  padding: var(--space-lg);
+  overflow: auto;
+  background: var(--color-bg-page);
+  color: var(--color-text-primary);
+  font-family: var(--font-mono);
+  font-size: var(--text-body);
+  line-height: var(--leading-body);
+  tab-size: 2;
+}
+
+.markdown pre code {
+  padding: 0;
+  border-radius: 0;
+  background: none;
+  color: inherit;
+  font-size: inherit;
+}
+
+.markdown__code.is-collapsed pre { display: none; }
+
+.markdown__code.is-collapsed .markdown__code-head { border-bottom: 0; }
+
+.markdown summary {
+  display: flex;
+  align-items: center;
+  gap: var(--space-xs);
+  min-height: var(--icon-lg);
+  font-weight: var(--weight-medium);
+  list-style: none;
+  cursor: pointer;
+}
+
+.markdown summary::-webkit-details-marker { display: none; }
+
+.markdown__disclosure {
+  width: var(--icon-lg);
+  height: var(--icon-lg);
+  border-radius: var(--radius-md);
+  color: var(--color-text-secondary);
+  transform: rotate(-90deg);
+}
+
+.markdown summary:hover > .markdown__disclosure,
+.markdown summary.is-hover > .markdown__disclosure { background: var(--color-bg-item-hover); }
+
+.markdown summary:active > .markdown__disclosure,
+.markdown summary.is-active > .markdown__disclosure { background: var(--color-bg-item-press); }
+
+.markdown details[open] > summary > .markdown__disclosure { transform: none; }
+
+@media (prefers-reduced-motion: no-preference) {
+  .markdown__disclosure { transition: transform var(--duration-md) var(--ease-standard), background var(--duration-fast) var(--ease-standard); }
+}
+
+.markdown details > summary + * { margin-top: var(--space-sm); }
+
+.markdown__footnotes {
+  padding-top: var(--space-sm);
+  border-top: 1px solid var(--color-border-faint);
+  color: var(--color-text-tertiary);
+  font-size: var(--text-caption);
+  line-height: var(--leading-caption);
+}
